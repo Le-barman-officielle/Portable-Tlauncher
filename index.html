@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>TLauncher Portable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #fff;
+    }
+    header {
+        background: linear-gradient(45deg, #4CAF50, #2E7D32);
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+    nav button {
+        margin: 5px;
+        padding: 10px 20px;
+        background: #222;
+        color: white;
+        border: 1px solid #444;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+    nav button:hover { background: #333; }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+    .section {
+        margin: 40px 0;
+        padding: 20px;
+        background: #1a1a1a;
+        border-radius: 10px;
+    }
+    .cta {
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .cta a {
+        background: #4CAF50;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1.2em;
+    }
+    .cta a:hover { background: #3e8e41; }
+
+    footer {
+        background: #000;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: .9em;
+        color: #ccc;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1 id="title">TLauncher Portable</h1>
+    <p id="subtitle">Jouez à Minecraft depuis une clé USB – n’importe où, sans installation</p>
+</header>
+
+<nav>
+    <button onclick="setLang('fr')">🇫🇷 Français</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+</nav>
+
+<div class="container">
+
+    <div class="section">
+        <h2 id="sec1_title">✔ 100% Gratuit</h2>
+        <p id="sec1_txt">
+            TLauncher Portable est totalement gratuit.  
+            Il vous permet d’emmener votre installation de Minecraft partout, directement sur une clé USB.
+            <br><br>
+            ⚠ Le multijoueur dépend des serveurs : seuls ceux qui autorisent les comptes non-officiels fonctionnent.  
+            Veuillez toujours respecter les règles et licences des serveurs.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 id="sec2_title">🚀 Jouez sur n’importe quel PC</h2>
+        <p id="sec2_txt">
+            Aucun fichier installé sur l’ordinateur : tout reste sur votre clé USB.  
+            Utilisable sur un PC scolaire, professionnel ou partagé (si autorisé).
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 id="sec3_title">📁 Portable, simple, efficace</h2>
+        <p id="sec3_txt">
+            Téléchargez TLauncher Portable, copiez-le sur votre clé USB, lancez-le — et jouez.  
+            Léger, rapide, autonome, et optimisé pour être totalement portable.
+        </p>
+        <div class="cta">
+            <a href="https://github.com/Le-barman-officielle/tlauncher-portable/archive/refs/heads/main.zip" id="download_btn">
+                📥 Télécharger TLauncher Portable (ZIP)
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <span id="footer_txt">
+        Projet non officiel, non affilié à Mojang/Microsoft.  
+        Utilisez toujours des copies légitimes du jeu et respectez les licences d’utilisation.
+    </span>
+</footer>
+
+<script>
+const langData = {
+    fr: {
+        title: "TLauncher Portable",
+        subtitle: "Jouez à Minecraft depuis une clé USB – n’importe où, sans installation",
+        sec1_title: "✔ 100% Gratuit",
+        sec1_txt: "TLauncher Portable est totalement gratuit. Il vous permet d’emmener votre installation de Minecraft partout, directement sur une clé USB.<br><br>⚠ Le multijoueur dépend des serveurs : seuls ceux qui autorisent les comptes non-officiels fonctionnent. Veuillez toujours respecter les règles et licences des serveurs.",
+        sec2_title: "🚀 Jouez sur n’importe quel PC",
+        sec2_txt: "Aucun fichier installé sur l’ordinateur : tout reste sur votre clé USB. Utilisable sur un PC scolaire, professionnel ou partagé (si autorisé).",
+        sec3_title: "📁 Portable, simple, efficace",
+        sec3_txt: "Téléchargez TLauncher Portable, copiez-le sur votre clé USB, lancez-le — et jouez. Léger, rapide, autonome, et optimisé pour être totalement portable.",
+        download_btn: "📥 Télécharger TLauncher Portable (ZIP)",
+        footer_txt: "Projet non officiel, non affilié à Mojang/Microsoft. Utilisez toujours des copies légitimes du jeu et respectez les licences d’utilisation."
+    },
+    en: {
+        title: "TLauncher Portable",
+        subtitle: "Play Minecraft from a USB drive – anywhere, with no installation",
+        sec1_title: "✔ 100% Free",
+        sec1_txt: "TLauncher Portable is completely free. It lets you carry your Minecraft setup everywhere, directly on a USB drive.<br><br>⚠ Multiplayer depends on servers: only servers that allow non-official accounts will work. Always respect server rules and usage licenses.",
+        sec2_title: "🚀 Play on any PC",
+        sec2_txt: "Nothing is installed on the computer: everything stays on your USB drive. Usable on school, work or shared PCs (if allowed).",
+        sec3_title: "📁 Portable, simple, efficient",
+        sec3_txt: "Download TLauncher Portable, copy it to your USB drive, run it — and play. Lightweight, fast, autonomous and designed to be fully portable.",
+        download_btn: "📥 Download TLauncher Portable (ZIP)",
+        footer_txt: "Unofficial project, not affiliated with Mojang/Microsoft. Always use legitimate copies of the game and respect usage licenses."
+    }
+};
+
+function setLang(lang) {
+    for (const key in langData[lang]) {
+        document.getElementById(key).innerHTML = langData[lang][key];
+    }
+}
+</script>
+
+</body>
+</html>
